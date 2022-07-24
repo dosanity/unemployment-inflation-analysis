@@ -2,6 +2,8 @@
 
 Our current economic climate is unique with the rise of the coronavirus. In the economy, we are seeing unique factors such as a high inflation rate paired with a low uneomployment rate. Historically, stagflation or recession-inflation occurs which is a situation where the inflation rate is high and unemployment remains high as well. We are particularly interested to see how these changes in the unemployment rate are potentially impacting the increase in inflation rate.
 
+For more information on the research on inflation, I have written a paper on the current state and impacts on inflation for the year 2022: [Inflation & Monetary Policy](https://github.com/dosanity/unemployment-inflation-analysis/files/9175033/Inflation-and-Monetary-Policy.pdf)
+
 ## Data
 
 Our data is from the Federal Reserve Bank of St. Louis. The Federal Bank is central to the nation's economy and provides economic resources and data for US economic statistical analysis. 
