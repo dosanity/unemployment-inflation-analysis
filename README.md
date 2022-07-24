@@ -206,6 +206,7 @@ Kurtosis:                       2.455   Cond. No.                         20.7
 In Period 4, the intercept of the regression is 240.8726 and the R-squared is 0.027. The R-squared is the proportion of the variation in the dependent variable that is predictable from the independent variable. In this case, unemployment does have and impact on inflation, but due to the R-squared being small, it is not the total determinant of inflation. This means that 2.7% of the variability observed in the target variable is explained by this regression model. Additionally, unemployment is statistically significant and as unemployment increases by 1%, inflation decreases by 2.0694 percentage points. 
 
 #### Overall (1948 - 2022) regression results.
+```
                             OLS Regression Results                            
 ==============================================================================
 Dep. Variable:               CPIAUCSL   R-squared:                       0.031
@@ -228,6 +229,7 @@ Prob(Omnibus):                  0.000   Jarque-Bera (JB):               82.872
 Skew:                           0.494   Prob(JB):                     1.01e-18
 Kurtosis:                       1.883   Cond. No.                         21.7
 ==============================================================================
+```
 
 Overall, the intercept of the regression is 67.7891 and the R-squared is 0.031. The R-squared is the proportion of the variation in the dependent variable that is predictable from the independent variable. In this case, unemployment does have and impact on inflation, but due to the R-squared being small, it is not the total determinant of inflation. This means that 3.1% of the variability observed in the target variable is explained by this regression model. Additionally, unemployment is statistically significant and as unemployment increases by 1%, inflation increases by 8.4992 percentage points.
 
