@@ -44,7 +44,15 @@ $$
 Inflation\ Rate = (CPI_{x+1} - CPI_x) / CPI_x * 100
 $$
 
-## Preliminary Analysis
+#### Ordinary Least Squares Assumptions:
+
+1. Standard Errors assume that the covariance matrix of the errors is correctly specified.
+2. The condition number is large, 1.22e+03. This might indicate that there are strong multicollinearity or other numerical problems.
+3. The linear regression model is "linear in parameters."
+4. There is a random sampling of observations.
+5. There is homoscedasticity and no autocorrelation.
+
+## Unemployment Analysis
 
 #### Period 1 (1948 - 1966) results.
 
@@ -197,15 +205,45 @@ Kurtosis:                       5.340   Cond. No.                         23.2
 
 Overall, the intercept of the regression is 2.5340 and the R-squared is 0.011. The R-squared is the proportion of the variation in the dependent variable that is predictable from the independent variable. In this case, unemployment does have and impact on inflation, but due to the R-squared being small, it is not the total determinant of inflation. This means that 1.1% of the variability observed in the target variable is explained by this regression model. Additionally, unemployment is statistically significant and as unemployment increases by 1%, inflation increases by 0.1759 percentage points.
 
-## Possible Explanations
+### Other Variables
+
+In our next analysis, we will only look at the years 1993 - 2022 since the data available for `SPY` is between this time period.
+
+```
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                INFRATE   R-squared:                       0.234
+Model:                            OLS   Adj. R-squared:                  0.228
+Method:                 Least Squares   F-statistic:                     35.86
+Date:                Mon, 17 Oct 2022   Prob (F-statistic):           3.03e-20
+Time:                        23:10:04   Log-Likelihood:                -610.30
+No. Observations:                 356   AIC:                             1229.
+Df Residuals:                     352   BIC:                             1244.
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      1.2686      0.517      2.456      0.015       0.253       2.285
+UNRATE        -0.0650      0.056     -1.151      0.250      -0.176       0.046
+DFF            0.2578      0.050      5.178      0.000       0.160       0.356
+SPY            0.0070      0.001      7.090      0.000       0.005       0.009
+==============================================================================
+Omnibus:                       36.171   Durbin-Watson:                   0.091
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               50.053
+Skew:                           0.710   Prob(JB):                     1.35e-11
+Kurtosis:                       4.165   Cond. No.                     1.22e+03
+==============================================================================
+```
+
+From this analysis, we can see that the intercept of the regression is 1.2686 and the R-squared is 0.234. This means that 23.4% of the variability observed in the target variable is explained by this regression model. From our independent variables, we can see that the unemployment rate is not statistically significant while the federal funds rate and S&P 500 are statistically significant. Thus, as the federal funds rate increases by 1%, inflation increases by 0.2578 percentage points. This makes sense because the Federal Reserve increases the rate to combat inflation. High fed funds rate is correlated to high inflation etc. Additionally, as the the price of the S&P 500 Index increase by 1 percentage point, inflation increases by 0.007 percentage points. It shows that there is some impact from the S&P 500, but it isn't large.
+
+
+### Possible Explanations
 
 Why are we seeing low unemployment with high inflation?
 
 + Job Availability
   + Anyone who wants a job can get one, as there is a large group of people that simply do not want to work.
 + Global Pandemic
-  + Despite an intitial shart increase in job loss, many companies have now transitioned to a work-from-home model, limiting job cuts.
-  
-## Conclusion
-
-Further research can be done to see what other factors influence the inflation rate. Some possible areas for futher investigation is that we can identify impacts of the central bank policy, such as asset purchases and interest rates (Fed funds rate), on unemployment and inflation. We could also look at how the S&P 500 and treasure rates could impact inflation. Additionally, we could utilize different variables to indicate the presence of a recession. 
+  + Despite an intitial shart increase in job loss, many companies have now transitioned to a work-from-home model, limiting job cuts. 
