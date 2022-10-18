@@ -246,4 +246,4 @@ Why are we seeing low unemployment with high inflation?
 + Job Availability
   + Anyone who wants a job can get one, as there is a large group of people that simply do not want to work.
 + Global Pandemic
-  + Despite an intitial shart increase in job loss, many companies have now transitioned to a work-from-home model, limiting job cuts. 
+  + Despite an intitial short increase in job loss, many companies have now transitioned to a work-from-home model, limiting job cuts. 
