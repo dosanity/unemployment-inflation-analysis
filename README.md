@@ -16,7 +16,7 @@ The unemployment rate represents the number of unemployed as a percentage of the
 
 The federal funds rate is the interest rate at which depository institutions trade federal funds (balances held at Federal Reserve Banks) with each other overnight. When a depository institution has surplus balances in its reserve account, it lends to other banks in need of larger balances. In simpler terms, a bank with excess cash, which is often referred to as liquidity, will lend to another bank that needs to quickly raise liquidity.
 
-![fredgraph](https://user-images.githubusercontent.com/29410712/196333291-d4e92cd5-fd44-40c6-b55e-d8d08ca96864.png)
+![fredgraph (1)](https://user-images.githubusercontent.com/29410712/196342930-e46e7545-8a26-403f-b104-bc098834424f.png)
 
 The Standard and Poor's 500, or simply the S&P 500, is a stock market index tracking the stock performance of 500 large companies listed on stock exchanges in the United States. It is one of the most commonly followed equity indices.
 
