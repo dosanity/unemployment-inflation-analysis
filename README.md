@@ -6,9 +6,9 @@ For more information on the research on inflation, I have written a paper on the
 
 ## Resources
 
-+ Software: Python 3.10, Jupyter Lab 3.4.4
-
-+ Dependencies: Matplotlib, Pandas
++ Analysis Software: `Jupyter Lab 3.4.4`
++ Programming Languages: `Python 3.10`
++ Dependencies: `Matplotlib`, `Pandas`
 
 ## Data
 
